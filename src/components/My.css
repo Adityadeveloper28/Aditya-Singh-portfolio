@@ -16,6 +16,9 @@
         font-family:'Courier New', Courier, monospace ;
         font-size: 1rem;
     }
+    .form{
+        flex:1 0 0% ;
+    }
 }
 
 @media (min-width: 992px) {
@@ -37,6 +40,9 @@
         font-family:'Courier New', Courier, monospace ;
         font-size: 1.5rem;
     }
+    .form{
+        flex: 0 0 auto;
+        width: 50%;    }
 }
 
 
@@ -102,4 +108,11 @@
 .navbar{
     background-color: rgba(22, 20, 20, 0.544);
     color: #fff;
+}
+.chead{
+    font-size: 3rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 9px;
+    font-weight:bolder;
+    
 }
