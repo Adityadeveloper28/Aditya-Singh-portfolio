@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./My.css";
 import { ToastContainer, toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 
 import emailjs from "@emailjs/browser";
 
@@ -32,13 +32,13 @@ function Contact() {
   };
 
   return (
-    <div className="container mt-2">
+    <div className="container-fluid mt-2">
       <div className="row m-2">
-        <div className="col-6 m-auto ">
-          <h1 className="text-white text-center  shead">CONTACT ME</h1>
-          <p className="text-white text-center cnt">
-            Please fill out the form below to contact me
-          </p>
+        <h1 className="text-white text-center  chead">CONTACT ME</h1>
+        <p className="text-white text-center cnt">
+          Please fill out the form below to contact me
+        </p>
+        <div className="col m-auto form">
           <form classname="text-white " ref={form} onSubmit={sendEmail}>
             <div class="mt-4">
               <input
@@ -93,7 +93,7 @@ function Contact() {
                   />
                 </Link>
               </div>
-              <div className="col " style={{ flex: "0 0 0%" }}>
+              <div className="col-3 " style={{ flex: "0 0 0%" }}>
                 <Link to="https://www.linkedin.com/in/aditya-singh-5b87a7253/">
                   <img
                     src="https://img.icons8.com/ios-filled/50/linkedin-circled--v1.png"
