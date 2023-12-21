@@ -12,7 +12,7 @@ function Navbar() {
       <nav className="navbar  navbar-expand-lg navbar-dark  rounded p-1 ">
         <div className="container-fluid ">
           <Link to="/" className="navbar-brand">
-          <img src="public/A (1).png" alt="Logo" width="30" height="24" className ="d-inline-block align-text-top"/>
+          <img src="../A (1).png" alt="Logo" width="30" height="24" className ="d-inline-block align-text-top"/>
 
           </Link>
           <button
