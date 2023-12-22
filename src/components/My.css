@@ -9,6 +9,7 @@
     .head{
         position: relative;
         font-size: 4rem;
+        font-weight:bold;
 font-family: 'Bebas Neue', sans-serif;
         justify-content: flex-start;
     }
@@ -24,7 +25,8 @@ font-family: 'Bebas Neue', sans-serif;
 @media (min-width: 992px) {
     .head{
         position: relative;
-        font-size: 4rem;
+        font-size: 5rem;
+        font-weight:bold;
 font-family: 'Bebas Neue', sans-serif;
         justify-content: center;
         
