@@ -9,7 +9,7 @@
     .head{
         position: relative;
         font-size: 4rem;
-        font-family: fantasy;
+font-family: 'Bebas Neue', sans-serif;
         justify-content: flex-start;
     }
     .para{
@@ -25,7 +25,7 @@
     .head{
         position: relative;
         font-size: 4rem;
-        font-family: fantasy;
+font-family: 'Bebas Neue', sans-serif;
         justify-content: center;
         
     }
