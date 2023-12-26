@@ -38,13 +38,13 @@ function Projects() {
           <div className="col  mb-4 d-flex justify-content-center">
             <div className="card " style={{ width: "20rem" }}>
               <div className="card-body">
-                <h3 className="prh">form_team</h3>
+                <h3 className="prh">Food Counter website </h3>
                 <hr></hr>
                 <p>
-                  here an basic mern website to create an team from the
-                  available an non-availale employees from different sectors
+                 Here an website calculate your total calories consumed with interactive cards 
+                display with several data.
                 </p>
-                <Link className="btn btn-dark" to="">
+                <Link className="btn btn-dark" to="https://foodcounter-frontend.vercel.app/">
                   click to visit &rarr;
                 </Link>
               </div>
