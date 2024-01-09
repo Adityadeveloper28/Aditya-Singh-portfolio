@@ -53,11 +53,10 @@ function Projects() {
           <div className="col  mb-4 d-flex justify-content-center">
             <div className="card  " style={{ width: "20rem" }}>
               <div className="card-body">
-                <h3 className="prh">form_team</h3>
+                <h3 className="prh">Pizza hut clone </h3>
                 <hr></hr>
                 <p>
-                  here an basic mern website to create an team from the
-                  available an non-availale employees from different sectors
+                  Pure Html CSS and Javascript wwebsite for developing an website and also 3d card carousel animation application.
                 </p>
                 <Link className="btn btn-dark" to="">
                   click to visit &rarr;
