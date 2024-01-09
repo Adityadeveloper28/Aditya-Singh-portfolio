@@ -56,7 +56,7 @@ function Projects() {
                 <h3 className="prh">Pizza hut clone </h3>
                 <hr></hr>
                 <p>
-                  Pure Html CSS and Javascript wwebsite for developing an website and also 3d card carousel animation application.
+                  Pure Html CSS and Javascript  for developing an website and also 3d card carousel animation application.
                 </p>
                 <Link className="btn btn-dark" to="https://pizza-hut-website.vercel.app/">
                   click to visit &rarr;
