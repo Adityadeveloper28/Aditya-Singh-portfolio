@@ -58,6 +58,7 @@ function Skill() {
                 src="https://imgs.search.brave.com/vivqBJZIe-PAXZVARYFCXGN2nDPAfKLH7Jy5DGfyyck/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZnJlZWJpZXN1cHBs/eS5jb20vbG9nb3Mv/bGFyZ2UvMngvZmln/bWEtMS1sb2dvLXBu/Zy10cmFuc3BhcmVu/dC5wbmc"
                 className="img rounded-top"
                 alt=" figma "
+                title="figma"
                 style={{ width: "8rem",margin:"5px" }}
               />
             </div>
