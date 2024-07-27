@@ -5,7 +5,7 @@ import { scrollToComponent } from "./ScrollTo";
 
 import "./My.css";
 import myimage from "../components/employee.png";
-const TEXTS = ["I AM AN STUDENT", "FULLSTACK DEVELOPER"];
+const TEXTS = ["UI UX DESIGNER ", "FULLSTACK DEVELOPER"];
 function My() {
   const [index, setIndex] = React.useState(0);
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 992);
@@ -37,7 +37,7 @@ function My() {
       </div>
       <div className="container mb-3">
         <p className="text-white d-flex  tst" style={{}}>
-          |
+          
           <TextTransition springConfig={presets.wobbly}>
             {TEXTS[index % TEXTS.length]}
           </TextTransition>
