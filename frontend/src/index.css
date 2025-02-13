@@ -1,0 +1,24 @@
+@import "tailwindcss";
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.customScrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.customScrollbar::-webkit-scrollbar-track {
+  background: rgba(31, 41, 55, 0.4);
+  border-radius: 9999px;
+}
+
+.customScrollbar::-webkit-scrollbar-thumb {
+  background: rgba(96, 165, 250, 0.8);
+  border-radius: 9999px;
+}
+
+.customScrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 1);
+}
+* {
+  cursor: none; /* Hides the default cursor */
+}
