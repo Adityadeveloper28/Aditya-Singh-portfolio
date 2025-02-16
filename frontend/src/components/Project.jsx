@@ -1,57 +1,74 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Github, ExternalLink, Boxes } from "lucide-react";
+import { Github, ExternalLink, Boxes, Youtube } from "lucide-react";
 import png2 from "../assets/image.png";
 
 function Project() {
   const projects = [
     {
-      title: "Portfolio Website",
+      title: "Aditya Singh Portfolio",
       description:
         "Personal portfolio built with React and Tailwind CSS featuring modern design and smooth animations.",
       technologies: ["React", "TailwindCSS", "Framer Motion"],
-      github: "https://github.com/yourusername/portfolio",
-      live: "https://yourportfolio.com",
+      github: "https://github.com/Adityadeveloper28/Aditya-Singh-portfolio",
+      deploy: "https://adityasingh-three.vercel.app/",
     },
     {
-      title: "E-Commerce Dashboard",
+      title: "Food Counter Frontend",
       description:
-        "Admin dashboard for managing products, orders, and customer data with real-time updates.",
-      technologies: ["Next.js", "Redux", "MongoDB"],
-      github: "https://github.com/yourusername/ecommerce",
-      live: "https://yourdashboard.com",
+        "A frontend interface for a food counter application, built with JavaScript for seamless user interaction.",
+      technologies: ["JavaScript", "React"],
+      github: "https://github.com/Adityadeveloper28/Foodcounter-frontend",
+      deploy: "foodcounter-frontend.vercel.app",
     },
     {
-      title: "Task Management App",
+      title: "3D Image Slider",
       description:
-        "Full-stack task management application with drag-and-drop functionality and team collaboration features.",
-      technologies: ["React", "Node.js", "PostgreSQL"],
-      github: "https://github.com/yourusername/taskapp",
-      live: "https://yourtaskapp.com",
+        "An interactive 3D image slider to experiment with 3D effects in CSS.",
+      technologies: ["CSS", "JavaScript"],
+      github: "https://github.com/Adityadeveloper28/3d-Image-slider",
+      deploy: "3d-image-slider-eight.vercel.app",
     },
     {
-      title: "Portfolio Website",
+      title: "Pizza Hut Website",
       description:
-        "Personal portfolio built with React and Tailwind CSS featuring modern design and smooth animations.",
-      technologies: ["React", "TailwindCSS", "Framer Motion"],
-      github: " ",
-      live: "https://yourportfolio.com",
+        "A 3D carousel animation project for a pizza-themed website, showcasing interactive UI elements.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      github: "https://github.com/Adityadeveloper28/pizza-hut-website-",
+      deploy: "pizza-hut-website.vercel.app",
     },
     {
-      title: "E-Commerce Dashboard",
+      title: "SaaS Automation Builder",
       description:
-        "Admin dashboard for managing products, orders, and customer data with real-time updates.",
-      technologies: ["Next.js", "Redux", "MongoDB"],
-      github: "http://    ",
-      live: "https://yourdashboard.com",
+        "A Next.js-based automation SaaS builder for streamlining workflow processes.",
+      technologies: ["Next.js", "TypeScript"],
+      github: "https://github.com/Adityadeveloper28/saas",
+      video:
+        "https://private-user-images.githubusercontent.com/115808044/384449068-015d6363-f405-44f3-9f64-8d202aac9067.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk3MTg5MzksIm5iZiI6MTczOTcxODYzOSwicGF0aCI6Ii8xMTU4MDgwNDQvMzg0NDQ5MDY4LTAxNWQ2MzYzLWY0MDUtNDRmMy05ZjY0LThkMjAyYWFjOTA2Ny5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIxNlQxNTEwMzlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zMDk3YTIwZTk1ZmQ2OTIzMWJkNmRmODUzYzdhNDRlYjdjZWYwM2IxODNmN2RjMjc1MmMwN2Q2NmVkNTY0NmQ2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.XxvJszWHewBn9ts77IjkLTNhdhdudna5WJ9VyjjzjtU",
     },
     {
-      title: "Task Management App",
+      title: "VNPS2024 React Project",
       description:
-        "Full-stack task management application with drag-and-drop functionality and team collaboration features.",
-      technologies: ["React", "Node.js", "PostgreSQL"],
-      github: "",
-      live: "https://yourtaskapp.com",
+        "A React-based project for VNPS 2024, incorporating modern UI/UX elements.",
+      technologies: ["React", "JavaScript"],
+      github: "https://github.com/Adityadeveloper28/VNPS2024-react",
+      deploy: "vnps-2024-react.vercel.app",
+    },
+    {
+      title: "Osscillation 2024",
+      description:
+        "A React-based project for Osscillation 2024, incorporating modern UI/UX elements.",
+      technologies: ["React", "JavaScript"],
+      github: "https://github.com/Adityadeveloper28/Osscillations2024",
+      deploy: "oscillations2024.vercel.app/",
+    },
+    {
+      title: "Finance Landing Page",
+      description:
+        "An internship assignment project featuring a finance-themed landing page built with HTML and CSS.",
+      technologies: ["HTML", "CSS"],
+      github: "https://github.com/Adityadeveloper28/finanace-landing-page",
+      deploy: "https://finanace-landing-page.vercel.app/",
     },
   ];
 
@@ -69,14 +86,14 @@ function Project() {
         Featured Projects
       </motion.h2>
       <div className="flex w-full">
-        <div className="w-1/2 flex justify-center sticky top-0">
+        <div className="w-1/2  justify-center sticky top-0 md:block hidden">
           <img
             src={png2}
             alt="Projects"
-            className="w-full  rounded-lg shadow-lg"
+            className="w-full  rounded-lg shadow-lg "
           />
         </div>
-        <div className="w-1/2 p-3 space-y-6 overflow-y-auto h-[800px]  mr-4 customScrollbar">
+        <div className="w-full md:w-1/2 p-3 space-y-6 overflow-y-auto h-[800px]  mr-4 customScrollbar">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -113,15 +130,42 @@ function Project() {
                   <Github className="w-5 h-5" />
                   <span>Code</span>
                 </a>
-                <a
-                  href={project.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
-                >
-                  <ExternalLink className="w-5 h-5" />
-                  <span>Live Demo</span>
-                </a>
+
+                {project.deploy && (
+                  <a
+                    href={project.deploy}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
+                  >
+                    <ExternalLink className="w-5 h-5" />
+                    <span>Live Demo</span>
+                  </a>
+                )}
+
+                {project.video && !project.deploy && (
+                  <a
+                    href={project.video}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
+                  >
+                    <Youtube className="w-5 h-5" />
+                    <span>Demo Video</span>
+                  </a>
+                )}
+
+                {project.deploy && project.video && (
+                  <a
+                    href={project.video}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
+                  >
+                    <Youtube className="w-5 h-5" />
+                    <span>Video</span>
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}

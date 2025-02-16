@@ -9,12 +9,12 @@ function Footer() {
   const socialLinks = [
     {
       icon: <Github className="w-5 h-5" />,
-      url: "https://github.com/adii1203",
+      url: "https://github.com/Adityadeveloper28",
       label: "GitHub",
     },
     {
       icon: <Linkedin className="w-5 h-5" />,
-      url: "https://www.linkedin.com/in/aditya-singh-8467b724a/",
+      url: "https://www.linkedin.com/in/aditya-singh-5b87a7253/",
       label: "LinkedIn",
     },
     {
@@ -76,7 +76,7 @@ function Footer() {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 bg-gray-800/50 rounded-full hover:bg-gray-700/50 transition-colors"
+                  className="p-2 bg-gray-800/50 rounded-full hover:bg-gray-700/50 transition-colors cursor-pointer"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                   aria-label={link.label}
