@@ -1,165 +1,57 @@
 import React from "react";
-import { motion } from "framer-motion";
 import png2 from "../assets/Aditya.jpg";
-
-const TypewriterText = () => {
-  const text = "Passionate about crafting seamless, user-friendly, and visually stunning web experiences. Specialized in modern frontend technologies including React, TailwindCSS, and Next.js.";
-  
-  const sentence = {
-    hidden: { opacity: 1 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.012 // Adjust this value to control typing speed
-      }
-    }
-  };
-
-  const letter = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0
-    }
-  };
-
-  return (
-    <motion.p
-      className="max-w-xl text-xl font-mono font-bold text-white/80 leading-relaxed animate-pulse"
-      variants={sentence}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false }}
-    >
-      {text.split("").map((char, index) => (
-        <motion.span
-          key={index}
-          variants={letter}
-        >
-          {char}
-        </motion.span>
-      ))}
-    </motion.p>
-  );
-};
+import { User } from "lucide-react";
 
 const About = () => {
   return (
-    <div
-      id="about"
-      className="relative min-h-screen flex items-end justify-center bg-gradient-to-br from-black to-[#1d0b24] overflow-hidden"
-    >
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-black to-[#1d0b24] z-0" />
-
+    <div className="bg-[#1a1023] about  flex flex-col md:flex-row items-center md:items-start max-w-screen w-full p-8 md:p-12 border border-gray-700/50">
       {/* Image Section */}
-      <motion.div
-        initial={{ scale: 0.8, opacity: 0, rotate: -15 }}
-        whileInView={{ scale: 1, opacity: 1, rotate: 0 }}
-        exit={{ scale: 0.8, opacity: 0, rotate: 15 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: false, margin: "-100px" }}
-        className="relative z-10 group"
-      >
+      <div className="w-full hover:border hover:border-white bg-black rounded-2xl relative md:w-1/3 flex-shrink-0 flex justify-center md:justify-start mb-8 md:mb-0 group">
         <img
           src={png2}
           alt="Aditya Singh"
-          className="w-[500px] h-[800px] object-cover shadow-2xl transition-transform duration-300 group-hover:shadow-purple-500/20"
-        />
-        <motion.div className="absolute inset-0 bg-gradient-to-t from-purple-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-      </motion.div>
-
-      {/* Black overlay */}
-      <motion.div
-        initial={{ opacity: 0, rotate: 15 }}
-        whileInView={{ opacity: 1, rotate: 0 }}
-        exit={{ opacity: 0, rotate: -15 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: false, margin: "-100px" }}
-        className="absolute inset-0 bg-gradient-to-br from-black/50 to-[#1d0b24]/75 z-20"
-      />
-
-      {/* Name text with dramatic shadow */}
-      <motion.h1
-        initial={{ y: 50, opacity: 0, rotate: 15 }}
-        whileInView={{ y: 0, opacity: 1, rotate: 0 }}
-        exit={{ y: -50, opacity: 0, rotate: -15 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: false, margin: "-100px" }}
-        className="absolute top-8 left-8 text-[12vw] font-bold uppercase text-white leading-none text-left z-30 tracking-tighter"
-        style={{
-          textShadow: `
-            2px 2px 0 #000,
-            -2px -2px 0 #000,
-            2px -2px 0 #000,
-            -2px 2px 0 #000,
-            0 2px 0 #000,
-            2px 0 0 #000,
-            0 -2px 0 #000,
-            -2px 0 0 #000,
-            4px 4px 8px rgba(0,0,0,0.5)
-          `
-        }}
-      >
-        Aditya <br />
-        <span
-          className="bg-gradient-to-r from-white to-pink-500/50 bg-clip-text text-white"
           style={{
-            textShadow: `
-              2px 2px 0 rgba(0,0,0,0.8),
-              -2px -2px 0 rgba(0,0,0,0.8),
-              2px -2px 0 rgba(0,0,0,0.8),
-              -2px 2px 0 rgba(0,0,0,0.8),
-              0 2px 0 rgba(0,0,0,0.8),
-              2px 0 0 rgba(0,0,0,0.8),
-              0 -2px 0 rgba(0,0,0,0.8),
-              -2px 0 0 rgba(0,0,0,0.8),
-              4px 4px 8px rgba(0,0,0,0.5)
-            `
+            objectPosition: "center 40%"
           }}
-        >
-          Singh
-        </span>
-      </motion.h1>
-
-      {/* Corner decorative lines */}
-      <hr className="w-1/5 h-[10px] bg-white border-none absolute top-20 right-3 transform -translate-x-1/2 -translate-y-1/2 z-30" />
-      <hr className="w-[10px] h-1/5 bg-white border-none absolute top-20 right-0 transform rotate-180 z-30 -translate-x-41 -translate-y-1" />
-      <hr className="w-1/5 h-[10px] bg-white border-none absolute bottom-20 left-50 transform -translate-x-1/2 -translate-y-1/2 z-30" />
-      <hr className="w-[10px] h-1/5 bg-white border-none absolute bottom-20 left-51 transform rotate-180 z-30 -translate-x-41 -translate-y-1" />
-
-      {/* Description with dramatic shadow */}
-      <motion.div
-        initial={{ x: 50, opacity: 0, rotate: 15 }}
-        whileInView={{ x: 0, opacity: 1, rotate: 0 }}
-        exit={{ x: -50, opacity: 0, rotate: -15 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: false, margin: "-100px" }}
-        className="absolute right-0 text-[10vw] font-bold uppercase text-white leading-none text-left z-50 tracking-tighter"
-        style={{
-          textShadow: `
-            2px 2px 0 #000,
-            -2px -2px 0 #000,
-            2px -2px 0 #000,
-            -2px 2px 0 #000,
-            0 2px 0 #000,
-            2px 0 0 #000,
-            0 -2px 0 #000,
-            -2px 0 0 #000,
-            4px 4px 8px rgba(0,0,0,0.5)
-          `
-        }}
-      >
-        <p className="leading-tight">
-          Frontend
-          <br />
-          Developer
+          className="h-96 w-full object-cover rounded-2xl shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:border-2 group-hover:border-white group-hover:-translate-x-6 group-hover:-translate-y-5 transform"
+        />
+        <div
+          className="absolute w-full h-full bg-[#1a1023] opacity-50 rounded-2xl group-hover:border-2 group-hover:border-white transition-all duration-300 group-hover:scale-105 group-hover:-translate-x-6 group-hover:-translate-y-5 transform"
+        ></div>
+      </div>
+      {/* Content Section */}
+      <div className="w-full md:w-2/3 md:pl-12 flex flex-col justify-center">
+        <h2 className="text-lg font-semibold tracking-widest mb-2 flex items-center gap-2 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <User className="w-6 h-6 text-purple-400" />
+          <span className="border-b-2 border-purple-400 pb-1">ABOUT ME</span>
+        </h2>
+        <p className="text-white text-base font-semibold mb-1">
+          <span className="text-purple-400 font-bold">Hello! I am Aditya Singh</span>
         </p>
-      </motion.div>
-
-      {/* Typing effect text */}
-      <div className="absolute bottom-25 left-16 z-30">
-        <TypewriterText />
+        <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 leading-tight">
+          I'm a Creative Frontend Developer
+        </h3>
+        <p className="text-gray-300 mb-2 text-sm md:text-base">
+          I'm very passionate and dedicated to my work. With 2+ years experience as a professional Frontend Developer, I have acquired the skills necessary to build great and premium websites.
+        </p>
+        <p className="text-gray-400 mb-6 text-xs md:text-sm">
+          I specialize in crafting seamless, user-friendly, and visually stunning web experiences. My expertise includes React, TailwindCSS, and Next.js. I love turning complex problems into simple, beautiful, and intuitive designs.
+        </p>
+        <div className="flex gap-4 mt-2">
+          <a
+            href="/assets/Aditya Singh - resume.pdf"
+            download
+            className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 text-white font-bold py-2 px-6 rounded transition-colors duration-200 shadow-md border border-purple-400"
+          >
+            DOWNLOAD CV
+          </a>
+          <a
+            href="#contact"
+            className="border-2 border-purple-400 text-purple-400 hover:bg-gradient-to-r hover:from-blue-500 hover:via-purple-500 hover:to-pink-500 hover:text-white font-bold py-2 px-6 rounded transition-colors duration-200 shadow-md"
+          >
+            HIRE ME
+          </a>
+        </div>
       </div>
     </div>
   );

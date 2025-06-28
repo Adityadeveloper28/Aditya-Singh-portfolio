@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
-import { FileDown, Menu, X } from "lucide-react";
+import { FileDown, Menu, X, AlignRight } from "lucide-react";
 import pdf from "../assets/Aditya Singh - resume.pdf";
 import { Home, FolderGit2, Code2, Briefcase, Mail } from "lucide-react";
 
@@ -73,19 +73,17 @@ function Navbar() {
   return (
     <>
       <motion.div
-        className={`fixed top-0 left-0 h-1 ${
-          activeSection === "home"
+        className={`fixed top-0 left-0 h-1 ${activeSection === "home"
             ? "bg-transparent"
             : "bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400"
-        }`}
+          }`}
         style={{ width: `${scrollProgress}%` }}
       />
       <nav
-        className={`fixed top-0 left-0 w-full p-4 z-100 transition-all duration-300 ${
-          activeSection === "home"
+        className={`fixed top-0 left-0 w-full p-4 z-100 transition-all duration-300 ${activeSection === "home"
             ? "bg-transparent"
             : "backdrop-blur-md bg-black/70"
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <motion.h1
@@ -106,11 +104,10 @@ function Navbar() {
                 smooth={true}
                 duration={500}
                 className={`relative cursor-pointer transition-colors duration-300 flex items-center gap-2
-               ${
-                 activeSection === item.id
-                   ? "text-blue-400"
-                   : "text-white hover:text-blue-400"
-               }`}
+               ${activeSection === item.id
+                    ? "text-blue-400"
+                    : "text-white hover:text-blue-400"
+                  }`}
                 onSetActive={() => setActiveSection(item.id)}
               >
                 {item.icon}
@@ -140,7 +137,7 @@ function Navbar() {
             className="md:hidden text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X size={24} /> : <AlignRight size={24} />}
           </button>
         </div>
 
@@ -157,9 +154,8 @@ function Navbar() {
                 to={item.id}
                 smooth={true}
                 duration={500}
-                className={`block py-3 px-4 text-center ${
-                  activeSection === item.id ? "text-blue-400" : "text-white"
-                }`}
+                className={`block py-3 px-4 text-center ${activeSection === item.id ? "text-blue-400" : "text-white"
+                  }`}
                 onClick={() => setIsMenuOpen(false)}
                 onSetActive={() => setActiveSection(item.id)}
               >
@@ -167,7 +163,7 @@ function Navbar() {
               </Link>
             ))}
             <motion.button
-              className="w-full flex mt-4 bg-gradient-to-r from-blue-500 to-purple-500 py-2 px-4"
+              className="w-11/12 mx-auto flex items-center justify-center mt-6 bg-gradient-to-r from-blue-500 to-purple-500 py-2 px-4 rounded-full shadow-lg text-white font-medium gap-2 transition-transform duration-200 active:scale-95 hover:from-blue-600 hover:to-purple-600"
               whileTap={{ scale: 0.95 }}
               onClick={() => window.open(pdf, "_blank")}
             >
