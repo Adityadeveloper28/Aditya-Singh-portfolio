@@ -78,7 +78,7 @@ function Project() {
       className="min-h-screen items-center bg-[#130816] text-white flex flex-col "
     >
       <motion.h2
-        className="text-5xl font-bold mb-12 mt-15 p-4 text-left bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent"
+        className=" text-3xl sm:text-5xl font-bold mb-12 mt-15 p-4 text-left bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}

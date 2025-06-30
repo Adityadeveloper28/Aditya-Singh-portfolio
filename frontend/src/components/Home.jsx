@@ -11,6 +11,7 @@ const Home = () => {
   };
 
   const description = "Frontend Developer | React | UI/UX Enthusiast".split("");
+  const mobileDescription = "Frontend Developer | React | UI/UX".split("");
 
   return (
     <section
@@ -55,7 +56,8 @@ const Home = () => {
           Aditya Singh
         </motion.h1>
 
-        <div className="flex justify-center space-x-1 mt-3 md:mt-4 overflow-hidden">
+        {/* Desktop Description */}
+        <div className="hidden md:flex flex-wrap justify-center mt-3 md:mt-4 overflow-hidden px-2">
           {description.map((letter, index) => (
             <motion.span
               key={index}
@@ -66,7 +68,26 @@ const Home = () => {
                 duration: 0.5,
                 delay: 0.5 + index * 0.03
               }}
-              className="text-lg md:text-xl font-light"
+              className="text-lg lg:text-xl font-light text-center"
+            >
+              {letter === " " ? "\u00A0" : letter}
+            </motion.span>
+          ))}
+        </div>
+
+        {/* Mobile Description */}
+        <div className="flex md:hidden flex-wrap justify-center mt-3 overflow-hidden px-2">
+          {mobileDescription.map((letter, index) => (
+            <motion.span
+              key={index}
+              variants={letterAnimation}
+              initial="hidden"
+              animate="visible"
+              transition={{
+                duration: 0.5,
+                delay: 0.5 + index * 0.03
+              }}
+              className="text-sm sm:text-base font-light text-center"
             >
               {letter === " " ? "\u00A0" : letter}
             </motion.span>
@@ -95,7 +116,7 @@ const Home = () => {
         </motion.div>
 
         <motion.p
-          className="text-base md:text-lg mt-4 md:mt-6 text-gray-300 leading-relaxed font-light px-2 md:px-0"
+          className="text-sm sm:text-base md:text-lg mt-4 md:mt-6 text-gray-300 leading-relaxed font-light px-4 sm:px-6 md:px-8 lg:px-0 max-w-3xl text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.5 }}
